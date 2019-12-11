@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tugas 40 Javascript</title>
+</head>
+
+<body>
+
+  <p>Pilih Warna Backround</p>
+
+  <select id="myselect" onchange="myfunction()">
+    <option value="red">Merah</option>
+    <option value="blue">Biru</option>
+    <option value="yellow">Kuning</option>
+    <option value="white">Putih</option>
+  </select>
+
+  <p>Saat Kamu Memilih Warna, Background Akan Berubah</p>
+
+  <script type="text/javascript">
+    function myfunction() {
+      var a = document.getElementById("myselect").value;
+      document.body.style.backgroundColor = a;
+    }
+  </script>
+</body>
+
+</html>
